@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #293462;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  width: 330px;
+  height: 330px;
+  background-color: #fe5f55;
+  border-radius: 200px 200px 100px 100px;
+}
+
+.head__right {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 0 0 50px 50px;
+  position: absolute;
+  top: 21%;
+  left: 43%;
+  overflow: hidden;
+}
+
+.head__left {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 0 0 50px 50px;
+  position: absolute;
+  top: 21%;
+  left: 49%;
+  overflow: hidden;
+}
+
+.eye__right {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 43%;
+  left: 43%;
+}
+
+.eye__left {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 43%;
+  left: 52%;
+}
+
+.mouth {
+  width: 100px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 35%;
+  position: absolute;
+  top: 60%;
+  left: 47%;
+}

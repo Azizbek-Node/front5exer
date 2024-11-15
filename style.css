@@ -1,0 +1,54 @@
+/* Reset default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222730;
+  font-family: Arial, sans-serif;
+}
+
+.heart {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  background-color: red;
+  transform: rotate(-45deg);
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background-color: red;
+  border-radius: 60%;
+}
+
+.heart:hover::before,
+.heart:hover::after {
+  background: linear-gradient(#9f082b, #b80505);
+}
+
+.heart::before {
+  top: -60px;
+  left: 0;
+}
+
+.heart::after {
+  left: 60px;
+  top: 0;
+}
+
+.heart:hover {
+  transform: rotate(-45deg) scale(1.4);
+  transition: all 0.3s ease;
+  background: linear-gradient(#4caab3, #224a93);
+}
